@@ -1,0 +1,42 @@
+.app-sider{
+    height: 100vh;
+    overflow-y: scroll;
+    /* 隐藏滚动条 */
+   scrollbar-width: none; /* firefox */
+   -ms-overflow-style: none; /* IE 10+ */
+}
+.app-sider::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+}
+.app-logo-default{
+    margin: 10px auto;
+    width: 160px;
+    height: 54px;
+    background-color: aliceblue;
+    animation: tensile 600ms;
+}
+.app-logo-actived{
+    margin: 10px auto;
+    width: 60px;
+    height: 54px;
+    background-color: bisque;
+    animation: shrinkage 300ms;
+}
+/* 拉伸 */
+@keyframes tensile {
+    0%{
+       width: 60px;
+    }
+    100%{
+        width: 160px;
+    }
+}
+/* 收缩 */
+@keyframes shrinkage {
+    0%{
+        width: 160px;
+     }
+     100%{
+         width: 60px;
+     }
+}
