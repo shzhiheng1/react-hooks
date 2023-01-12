@@ -9,6 +9,9 @@ import Context from '../pages/Study/Hooks/Context';
 import Reducer from '../pages/Study/Hooks/Reducer';
 import Transition from '../pages/Study/Hooks/Transition';
 import Id from '../pages/Study/Hooks/Id';
+import DeferredValue from '../pages/Study/Hooks/DeferredValue';
+import DebugValue from '../pages/Study/Hooks/DebugValue';
+import ImperativeHandle from '../pages/Study/Hooks/ImperativeHandle';
 const routers=[
     {
         title:'首页',
@@ -60,15 +63,33 @@ const routers=[
      },
      {
       title:'useTransition使用',
-      name:'Hooks-Reducer',
+      name:'Hooks-Transition',
       path:'/hooks/transition',
       component:Transition
      },
      {
       title:'useId使用',
-      name:'Hooks-Reducer',
+      name:'Hooks-Id',
       path:'/hooks/id',
       component:Id
+     },
+     {
+      title:'useDeferredValue使用',
+      name:'Hooks-DeferredValue',
+      path:'/hooks/deferredValue',
+      component:DeferredValue
+     },
+     {
+      title:'useDebugValue使用',
+      name:'Hooks-DebugValue',
+      path:'/hooks/debugValue',
+      component:DebugValue
+     },
+     {
+      title:'useImperativeHandle使用',
+      name:'Hooks-ImperativeHandle',
+      path:'/hooks/imperativeHandle',
+      component:ImperativeHandle
      },
     {
         title:'404',

@@ -47,6 +47,18 @@ export const siderMap=[
                 key:'/hooks/id',
                 label:'useId使用'
               },
+              {
+                key:'/hooks/deferredValue',
+                label:'useDeferredValue使用'
+              },
+              {
+                key:'/hooks/imperativeHandle',
+                label:'useImperativeHandle使用'
+              },
+              {
+                key:'/hooks/debugValue',
+                label:'useDebugValue使用'
+              },
             ]
           }
         ]
