@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+## useMemo,useCallback,memo区别：
+- useMemo用于避免在组件重新渲染时执行昂贵的计算，只有在依赖发生变化时重新计算值。（计算）
+- useCallback用于避免在组件重新渲染时创建新的函数实例，只有在依赖发生变化时返回新的函数实例。（防止传递给子组件的属性值函数时且页面重渲染时,子组件重新渲染）
+- memo用于避免在父组件重新渲染时重新渲染子组件，只有在属性发生变化时重新渲染组件。（props属性值）
